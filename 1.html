@@ -22,19 +22,10 @@
             padding: 30px;
             border: none;
         }
-        /* Заголовок на китайском (можно заменить или удалить) */
-        h1 {
-            font-size: 26px;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid black;
-        }
-        /* Стиль для каждого экспоната */
+        /* Каждый экспонат — блок */
         .item {
             margin-bottom: 20px;
-            border-bottom: 1px solid black;  /* черта под каждым экспонатом */
+            border-bottom: 1px solid black;  /* полоска под каждым экспонатом */
             padding-bottom: 15px;
         }
         /* Строка с номером и названием */
@@ -53,9 +44,9 @@
             font-weight: bold;
             font-size: 18px;
         }
-        /* Строка с материалами - отступ, чтобы точка была под началом названия */
+        /* Строка с материалами — отступ, чтобы точка была под началом названия */
         .item-materials {
-            margin-left: 28px;  /* отступ, равный ширине номера (цифра + точка + пробел) */
+            margin-left: 28px;  /* отступ под номер и точку */
             font-size: 18px;
             line-height: 1.4;
         }
@@ -64,16 +55,12 @@
             content: "• ";
             font-size: 18px;
         }
-        /* Убираем маркер для пустых строк */
-        .item-materials:empty::before {
-            content: "";
-        }
-        /* Дополнительно: если материалы не нужны, можно скрыть */
+        /* Убираем лишнюю полоску у последнего элемента, если хотите — оставим, не страшно */
     </style>
 </head>
 <body>
 <div class="card">
-    <h1>猎具和工具</h1>  <!-- Заголовок на китайском, можно заменить или удалить -->
+    <!-- Заголовка нет, начинаем сразу с экспонатов -->
 
     <div class="item">
         <div class="item-header">
