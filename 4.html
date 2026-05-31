@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Этикетки 8 предметов</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 700px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 募捐容器，铭文：“为在帝国异教徒中传播东正教信仰”</div>
+        <div class="item-desc">19—20世纪初，俄罗斯</div>
+        <div class="item-desc">铜，镍，珐琅，毡；车床加工，焊接，镀镍</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+        <div class="item-title">2. 祝圣面包用盘</div>
+        <div class="item-desc">19世纪末—20世纪初</div>
+        <div class="item-desc">黄铜，铜；机床加工，镀银，铸造，焊接</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="item">
+        <div class="item-title">3. 圣尼尔像</div>
+        <div class="item-desc">20世纪初</div>
+        <div class="item-desc">木，颜料；雕刻</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="item">
+        <div class="item-title">4. 圣物容器（欧洛希亚）：“基督受难（两圣站旁）”、“复活”</div>
+        <div class="item-desc">1884年</div>
+        <div class="item-desc">木，刨花，箔片，干草；雕刻，装配</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="item">
+        <div class="item-title">5. 圣体盒（受洗纪念盒）</div>
+        <div class="item-desc">20世纪初</div>
+        <div class="item-desc">木，玻璃，天鹅绒；雕刻，镶嵌，组装</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="item">
+        <div class="item-title">6. 烛垢钳</div>
+        <div class="item-desc">20世纪初，俄罗斯</div>
+        <div class="item-desc">镀镍铁；铸造，锻造，组装</div>
+    </div>
+
+    <!-- 7 -->
+    <div class="item">
+        <div class="item-title">7. 傅圣膏刷</div>
+        <div class="item-desc">20世纪初</div>
+        <div class="item-desc">黄铜，猪鬃；铸造，锻造，雕刻，组装</div>
+    </div>
+
+    <!-- 8 -->
+    <div class="item">
+        <div class="item-title">8. 取圣饼颗粒刀</div>
+        <div class="item-desc">20世纪初</div>
+        <div class="item-desc">金属，骨；铸造，锻造，组装</div>
+    </div>
+
+</div>
+</body>
+</html>
