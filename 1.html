@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>猎具和工具</title>
+    <title>Музейная этикетка</title>
     <style>
         body {
             background: white;
@@ -19,120 +19,42 @@
             max-width: 700px;
             background: white;
             color: black;
-            padding: 30px;
+            padding: 20px;
             border: none;
         }
-        /* Каждый экспонат — блок */
-        .item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid black;  /* полоска под каждым экспонатом */
-            padding-bottom: 15px;
-        }
-        /* Строка с номером и названием */
-        .item-header {
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 8px;
-        }
-        .item-number {
+        h1 {
+            font-size: 28px;
             font-weight: bold;
-            font-size: 18px;
+            margin: 0 0 10px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid black;   /* чёрная полоска под названием */
         }
-        .item-title {
-            font-weight: bold;
-            font-size: 18px;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 16px 0 0 0;
         }
-        /* Строка с материалами — отступ, чтобы точка была под началом названия */
-        .item-materials {
-            margin-left: 28px;  /* отступ под номер и точку */
+        li {
             font-size: 18px;
-            line-height: 1.4;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            padding-left: 0;
         }
-        /* Точка перед материалами */
-        .item-materials::before {
-            content: "• ";
+        /* Точка перед текстом */
+        li::before {
+            content: "• ";   /* точка с пробелом */
             font-size: 18px;
+            display: inline;
         }
-        /* Убираем лишнюю полоску у последнего элемента, если хотите — оставим, не страшно */
     </style>
 </head>
 <body>
 <div class="card">
-    <!-- Заголовка нет, начинаем сразу с экспонатов -->
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">1.</span>
-            <span class="item-title">子弹带</span>
-        </div>
-        <div class="item-materials">海豹毛皮、鹿毛皮、麂皮、布料、鹿颈下毛</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">2.</span>
-            <span class="item-title">仿鹿哨 (用于吸引马鹿)</span>
-        </div>
-        <div class="item-materials">生皮、兽筋、线</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">3.</span>
-            <span class="item-title">刮刀</span>
-        </div>
-        <div class="item-materials">木、铁</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">4.</span>
-            <span class="item-title">钻</span>
-        </div>
-        <div class="item-materials">金属、木、皮</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">5.</span>
-            <span class="item-title">宽刃刀 (用于猎杀大型野兽及加工木材)</span>
-        </div>
-        <div class="item-materials">铁；锻打</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">6.</span>
-            <span class="item-title">矛</span>
-        </div>
-        <div class="item-materials">铁</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">7.</span>
-            <span class="item-title">弩箭镞</span>
-        </div>
-        <div class="item-materials">铁</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">8.</span>
-            <span class="item-title">鱼叉 (用于叉捕大鱼)</span>
-        </div>
-        <div class="item-materials">铁</div>
-    </div>
-
-    <div class="item">
-        <div class="item-header">
-            <span class="item-number">9.</span>
-            <span class="item-title">刻刀 (用于加工木材和骨头)</span>
-        </div>
-        <div class="item-materials">铁、骨</div>
-    </div>
+    <h1>子弹带</h1>   <!-- Замените на название вашего экспоната -->
+    <ul>
+        <li>海豹毛皮、鹿毛皮、麂皮、布料、鹿颈下毛</li>
+        <!-- Если нужно два пункта, добавьте ещё один <li> -->
+    </ul>
 </div>
 </body>
 </html>
