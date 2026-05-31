@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Китайская мебель — стол и стул</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        /* Заголовок с чёрной полоской */
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Блок с краткой информацией (точка) */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Специальный блок для длинного описания: полоска и бордовый текст */
+        .description {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;   /* полоска сверху */
+            color: #800000;                /* бордовый цвет */
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        /* Убираем точку у этого блока */
+        .description::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item">
+        <div class="item-title">“中国风”家具套装中的桌与椅</div>
+        <div class="item-desc">20世纪初，中国</div>
+        <div class="item-desc">木，漆；雕刻，上漆</div>
+    </div>
+    
+    <div class="description">
+        中国风在日常生活中的流行始于17世纪的欧洲国家，而在俄罗斯则始于19世纪下半叶，当时俄罗斯市场开始出现中国商品：丝绸面料、茶叶、装饰与实用艺术品。中国风在家具制造中也大受欢迎，尤其受到青睐的是带有精雕细刻的龙纹装饰的扶手椅和椅子（在中国，龙是皇权、财富与智慧的象征）。<br><br>
+        椅子的雕花靠背被设计成两条蜿蜒盘旋、鳞片粗大且对角线的龙的形象。扶手通过凹槽与靠背侧板相连，构成龙身的头部，其中长有角、带有圆形“宝珠”的头部落在座面上。椅腿也被设计成神兽的头部的样式，并以“龙爪”收尾。<br><br>
+        值得注意的是，在这件家具的装饰中，中国的传统技法和洛可可风格有机地融合在了一起。
+    </div>
+</div>
+</body>
+</html>
