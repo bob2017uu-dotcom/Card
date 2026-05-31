@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Музейная этикетка</title>
+    <title>Экспонаты</title>
     <style>
         body {
             background: white;
@@ -20,41 +20,70 @@
             background: white;
             color: black;
             padding: 20px;
-            border: none;
         }
-        h1 {
-            font-size: 28px;
+        /* Каждый блок экспоната */
+        .item {
+            margin-bottom: 28px;
+        }
+        /* Заголовок: номер + название, под ним полоска */
+        .item-title {
+            font-size: 26px;
             font-weight: bold;
-            margin: 0 0 10px 0;
-            padding-bottom: 8px;
-            border-bottom: 1px solid black;   /* чёрная полоска под названием */
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
         }
-        ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 16px 0 0 0;
-        }
-        li {
+        /* Описание (материалы) с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
             font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 12px;
-            padding-left: 0;
+            line-height: 1.4;
         }
         /* Точка перед текстом */
-        li::before {
-            content: "• ";   /* точка с пробелом */
+        .item-desc::before {
+            content: "• ";
             font-size: 18px;
-            display: inline;
         }
     </style>
 </head>
 <body>
 <div class="card">
-    <h1>子弹带</h1>   <!-- Замените на название вашего экспоната -->
-    <ul>
-        <li>海豹毛皮、鹿毛皮、麂皮、布料、鹿颈下毛</li>
-        <!-- Если нужно два пункта, добавьте ещё один <li> -->
-    </ul>
+    <div class="item">
+        <div class="item-title">1. 子弹带</div>
+        <div class="item-desc">海豹毛皮、鹿毛皮、麂皮、布料、鹿颈下毛</div>
+    </div>
+    <div class="item">
+        <div class="item-title">2. 仿鹿哨 (用于吸引马鹿)</div>
+        <div class="item-desc">生皮、兽筋、线</div>
+    </div>
+    <div class="item">
+        <div class="item-title">3. 刮刀</div>
+        <div class="item-desc">木、铁</div>
+    </div>
+    <div class="item">
+        <div class="item-title">4. 钻</div>
+        <div class="item-desc">金属、木、皮</div>
+    </div>
+    <div class="item">
+        <div class="item-title">5. 宽刃刀 (用于猎杀大型野兽及加工木材)</div>
+        <div class="item-desc">铁；锻打</div>
+    </div>
+    <div class="item">
+        <div class="item-title">6. 矛</div>
+        <div class="item-desc">铁</div>
+    </div>
+    <div class="item">
+        <div class="item-title">7. 弩箭镞</div>
+        <div class="item-desc">铁</div>
+    </div>
+    <div class="item">
+        <div class="item-title">8. 鱼叉 (用于叉捕大鱼)</div>
+        <div class="item-desc">铁</div>
+    </div>
+    <div class="item">
+        <div class="item-title">9. 刻刀 (用于加工木材和骨头)</div>
+        <div class="item-desc">铁、骨</div>
+    </div>
 </div>
 </body>
 </html>
