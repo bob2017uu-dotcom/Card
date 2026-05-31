@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猎具和工具</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 700px;
+            background: white;
+            color: black;
+            padding: 30px;
+            border: none;
+        }
+        /* Заголовок на китайском (можно заменить или удалить) */
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+        /* Стиль для каждого экспоната */
+        .item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid black;  /* черта под каждым экспонатом */
+            padding-bottom: 15px;
+        }
+        /* Строка с номером и названием */
+        .item-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        .item-number {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        /* Строка с материалами - отступ, чтобы точка была под началом названия */
+        .item-materials {
+            margin-left: 28px;  /* отступ, равный ширине номера (цифра + точка + пробел) */
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        /* Точка перед материалами */
+        .item-materials::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Убираем маркер для пустых строк */
+        .item-materials:empty::before {
+            content: "";
+        }
+        /* Дополнительно: если материалы не нужны, можно скрыть */
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>猎具和工具</h1>  <!-- Заголовок на китайском, можно заменить или удалить -->
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">1.</span>
+            <span class="item-title">子弹带</span>
+        </div>
+        <div class="item-materials">海豹毛皮、鹿毛皮、麂皮、布料、鹿颈下毛</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">2.</span>
+            <span class="item-title">仿鹿哨 (用于吸引马鹿)</span>
+        </div>
+        <div class="item-materials">生皮、兽筋、线</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">3.</span>
+            <span class="item-title">刮刀</span>
+        </div>
+        <div class="item-materials">木、铁</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">4.</span>
+            <span class="item-title">钻</span>
+        </div>
+        <div class="item-materials">金属、木、皮</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">5.</span>
+            <span class="item-title">宽刃刀 (用于猎杀大型野兽及加工木材)</span>
+        </div>
+        <div class="item-materials">铁；锻打</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">6.</span>
+            <span class="item-title">矛</span>
+        </div>
+        <div class="item-materials">铁</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">7.</span>
+            <span class="item-title">弩箭镞</span>
+        </div>
+        <div class="item-materials">铁</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">8.</span>
+            <span class="item-title">鱼叉 (用于叉捕大鱼)</span>
+        </div>
+        <div class="item-materials">铁</div>
+    </div>
+
+    <div class="item">
+        <div class="item-header">
+            <span class="item-number">9.</span>
+            <span class="item-title">刻刀 (用于加工木材和骨头)</span>
+        </div>
+        <div class="item-materials">铁、骨</div>
+    </div>
+</div>
+</body>
+</html>
