@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–7</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Строка без точки и без отступа (для экспоната 3) */
+        .item-subtitle {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+        .item-subtitle::before {
+            content: none;
+        }
+        .item-desc + .item-desc,
+        .item-subtitle + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Тобоев Тугурдур — всё в заголовке -->
+    <div class="item">
+        <div class="item-title">1. 托博耶夫•图古尔杜尔 (1858–1878) —— 阿金斯克布里亚特人的首席台吉，《霍里布里亚特编年史》作者。</div>
+        <!-- без дополнительных строк -->
+    </div>
+
+    <!-- 2. Сосуд, которым пользовался Тобоев -->
+    <div class="item">
+        <div class="item-title">2. 托博耶夫•图古尔杜尔曾用的供奉容器</div>
+        <div class="item-desc">19世纪中叶</div>
+        <div class="item-desc">木，颜料；彩绘</div>
+    </div>
+
+    <!-- 3. История хори-бурят: вторая строчка без отступа и без точки -->
+    <div class="item">
+        <div class="item-title">3. 《霍里布里亚特史》</div>
+        <div class="item-subtitle">古蒙古文手稿</div>
+        <div class="item-desc">19世纪末—20世纪初</div>
+        <div class="item-desc">纸；墨</div>
+    </div>
+
+    <!-- 4. Летопись хори-бурят (печатное издание) -->
+    <div class="item">
+        <div class="item-title">4. 《霍里布里亚特编年史：托博耶夫•图古尔杜尔与尤姆苏诺夫•万达达编年史》</div>
+        <div class="item-desc">1940年</div>
+        <div class="item-desc">纸，纸板，布面精装，活字印刷</div>
+    </div>
+
+    <!-- 5. В школе (акварель) -->
+    <div class="item">
+        <div class="item-title">5. 《在中学里》—— 出自系列《布里亚特第一位学者多尔吉•班扎罗夫的创作》</div>
+        <div class="item-desc">1992年，布里亚特</div>
+        <div class="item-desc">纸，水彩，墨</div>
+    </div>
+
+    <!-- 6. Бюст Доржи Банзарова — всё в заголовке -->
+    <div class="item">
+        <div class="item-title">6. 多尔吉•班扎罗夫 (1822–1855) 半身像 —— 第一位接受西式高等教育的布里亚特学者，重要蒙古学著作的作者</div>
+    </div>
+
+    <!-- 7. Собрание сочинений Доржи Банзарова -->
+    <div class="item">
+        <div class="item-title">7. 多尔吉•班扎罗夫《文集》</div>
+        <div class="item-desc">1955年，苏联</div>
+        <div class="item-desc">纸，纸板，人造革</div>
+    </div>
+
+</div>
+</body>
+</html>

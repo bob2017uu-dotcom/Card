@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коллекция: униформа, скульптура, оружие</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        /* Обычный заголовок с номером */
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Заголовок без номера (для двууголки) с отступом для выравнивания */
+        .item-title-no-number {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            padding-left: 1.4em;  /* отступ, равный ширине "1. " */
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        /* Блок для бордового текста (с полоской сверху) */
+        .description {
+            margin-top: 16px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .description::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Офицерский мундир -->
+    <div class="item">
+        <div class="item-title">1. 沙皇俄国军官制服</div>
+        <div class="item-desc">19世纪中叶，俄罗斯</div>
+        <div class="item-desc">“卡斯托”呢，斜纹布，缎子，镶绦，加强线，金属合金</div>
+    </div>
+
+    <!-- Двууголка (без номера) с выравниванием -->
+    <div class="item">
+        <div class="item-title-no-number">双角帽</div>
+        <div class="item-desc">19世纪末，俄罗斯</div>
+        <div class="item-desc">毛毡，金银线带，金属丝线</div>
+        <div class="description">
+            双角帽于18世纪末取代了更为笨重不便的三角帽，可折叠，占用空间小。1803年至1845年间，双角帽与基弗帽并列为俄军军官的流行头饰。帽边镶绦的宽度和样式、帽徽及羽饰用以区分军衔。以尖角朝前的方向佩戴时（“野外方式”）表明佩戴者为皇帝侍从的成员。直至第一次世界大战，双角帽始终是俄罗斯军官及文官礼服的一部分。
+        </div>
+    </div>
+
+    <!-- 2. Губернатор -->
+    <div class="item">
+        <div class="item-title">2. 小雕像《总督》</div>
+        <div class="item-desc">20世纪初，外贝加尔州</div>
+        <div class="item-desc">木，手工制作，立体雕刻</div>
+    </div>
+
+    <!-- 3. Чиновник -->
+    <div class="item">
+        <div class="item-title">3. 小雕像《官员》</div>
+        <div class="item-desc">20世纪初，外贝加尔州</div>
+        <div class="item-desc">木，手工制作，立体雕刻</div>
+    </div>
+
+    <!-- 4. Тайцзи -->
+    <div class="item">
+        <div class="item-title">4. 小雕像《台吉》</div>
+        <div class="item-desc">20世纪初，外贝加尔州</div>
+        <div class="item-desc">木，手工制作，立体雕刻</div>
+    </div>
+
+    <!-- 5. Губернатор области -->
+    <div class="item">
+        <div class="item-title">5. 小雕像《省长》</div>
+        <div class="item-desc">20世纪初，外贝加尔州，色楞格县</div>
+        <div class="item-desc">木，手工制作，立体雕刻</div>
+    </div>
+
+    <!-- 6. Казачья шашка -->
+    <div class="item">
+        <div class="item-title">6. 哥萨克马刀</div>
+        <div class="item-desc">19世纪，俄罗斯</div>
+        <div class="item-desc">钢，铜，雕刻，蚀刻</div>
+    </div>
+
+    <!-- 7. Сабля образца 1798 года (без второй строки) -->
+    <div class="item">
+        <div class="item-title">7. 1798年式轻骑兵军刀</div>
+        <div class="item-desc">俄罗斯</div>
+        <!-- второй строки нет -->
+    </div>
+
+    <!-- 8. Ножны для сабли 1798 (без второй строки) -->
+    <div class="item">
+        <div class="item-title">8. 1798年轻式骑兵军刀刀鞘</div>
+        <div class="item-desc">钢，木，皮革</div>
+        <!-- второй строки нет -->
+    </div>
+
+    <!-- 9. Пехотная винтовка образца 1854 -->
+    <div class="item">
+        <div class="item-title">9. 1854年式步兵步枪（样品）</div>
+        <div class="item-desc">俄罗斯，图拉市</div>
+        <div class="item-desc">钢，木，青铜</div>
+    </div>
+
+</div>
+</body>
+</html>

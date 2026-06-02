@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 6–16</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Стиль для названия без номера (такой же, как .item-title) */
+        .item-title-nonumber {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 16px 0 6px 0;  /* чуть больше отступ сверху для разделения */
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-note {
+            margin: 10px 0 0 1em;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: normal;
+            color: #800000;
+        }
+        .item-note::before {
+            content: none;
+        }
+        .item-subtitle {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+        .item-subtitle::before {
+            content: none;
+        }
+        .item-desc + .item-desc,
+        .item-note + .item-desc,
+        .item-title-nonumber + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 6. Цыбиков -->
+    <div class="item">
+        <div class="item-title">6. 齐比科夫•贡博扎普 (1873–1930) — 东方学家、民族学家、佛学家、探险考察者、政治家、翻译家、多所大学教授。</div>
+        <div class="item-note">著有《佛教朝圣者在西藏圣地》（1899–1902年旅行记），被译成多种语言。</div>
+        <!-- Подзаголовок без номера, но с полоской -->
+        <div class="item-title-nonumber">齐比科夫•贡博扎普《选集》两卷本：《佛教朝圣者在西藏圣地》<span style="font-weight: normal;">第一卷</span></div>
+        <div class="item-desc">1918年,出版地：彼得格勒</div>
+        <div class="item-desc">纸板，纸，人造革；活字印刷</div>
+    </div>
+
+    <!-- 7. Личные вещи Цыбикова -->
+    <div class="item">
+        <div class="item-title">7. 齐比科夫•贡博扎普的私人物品</div>
+    </div>
+
+    <!-- 8. Агван Лобсан Доржиев и Цыбен Жамцарано -->
+    <div class="item">
+        <div class="item-title">8. 阿格万•洛布桑•多尔吉耶夫 (1853–1938) (居中)，齐本•扎姆察拉诺 (右一) — 布里亚特与藏传佛教杰出活动家、启蒙者、外交家、第十三世达赖喇嘛的导师及官方代表。</div>
+        <div class="item-note">俄国皇家地理学会会员。以改革蒙古文竖写文字以适应布里亚特语而闻名；创制了布里亚特文字“瓦金塔拉”。倡导用欧洲科学的成就丰富传统佛教教育；在其领导下，多个扎仓开办了学校。</div>
+    </div>
+
+    <!-- 9. Личные вещи Агвана Доржиева -->
+    <div class="item">
+        <div class="item-title">9. 阿格万•洛布桑•多尔吉耶夫的私人物品</div>
+        <div class="item-subtitle">眼镜，阿亚嘎（碗）</div>
+    </div>
+
+    <!-- 10. Книга Агвана Доржиева -->
+    <div class="item">
+        <div class="item-title">10. 阿格万•多尔吉耶夫著《布里亚特-蒙古民族起源史》</div>
+        <div class="item-desc">1900年,出版地：圣彼得堡</div>
+        <div class="item-desc">纸；活字印刷</div>
+    </div>
+
+    <!-- 11. Хангалов Матвей -->
+    <div class="item">
+        <div class="item-title">11. 汉加洛夫•马特维 (1858–1918) — 布里亚特启蒙者、“人民教师”、民族学家、民俗学家。</div>
+        <div class="item-note">俄国地理学会正式会员，法国科学院奖得主。</div>
+    </div>
+
+    <!-- 12. Дневник Хангалова -->
+    <div class="item">
+        <div class="item-title">12. 汉加洛夫•马特维的日记 <span style="font-weight: normal;">第一、第三部分</span></div>
+        <div class="item-desc">1910年</div>
+    </div>
+
+    <!-- 13. Медаль РГО -->
+    <div class="item">
+        <div class="item-title">13. 俄国皇家地理学会东西伯利亚分会纪念奖章</div>
+        <div class="item-desc">1901年授予汉加洛夫•马特维</div>
+    </div>
+
+    <!-- 14. Медаль "За полезное" -->
+    <div class="item">
+        <div class="item-title">14. 俄国皇家地理学会“有益贡献”奖章</div>
+        <div class="item-desc">1890年授予汉加洛夫•马特维</div>
+    </div>
+
+    <!-- 15. Печать Хангалова -->
+    <div class="item">
+        <div class="item-title">15. 汉加洛夫•马特维的印章</div>
+        <div class="item-desc">19世纪末—20世纪初</div>
+        <div class="item-desc">金属；雕刻，铸造</div>
+    </div>
+
+    <!-- 16. Личные вещи Хангалова -->
+    <div class="item">
+        <div class="item-title">16. 汉加洛夫•马特维的私人物品</div>
+        <div class="item-subtitle">酒杯，玻璃酒壶，烟灰缸，烟嘴，餐具</div>
+    </div>
+
+</div>
+</body>
+</html>

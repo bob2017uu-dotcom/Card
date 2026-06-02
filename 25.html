@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Амулеты и обереги</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Обычная строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Пояснительная строка без точки и без отступа */
+        .item-note-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+        .item-note-plain::before {
+            content: none;
+        }
+        /* Для компактности между строками */
+        .item-desc + .item-desc,
+        .item-note-plain + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 护身符 “山”</div>
+        <div class="item-desc">19世纪末 – 20世纪初。伊尔库茨克州。</div>
+        <div class="item-desc">亚麻布、马口铁、珠子。手工制作。</div>
+    </div>
+
+    <!-- 2 (с пояснением без точки) -->
+    <div class="item">
+        <div class="item-title">2. 护身符 “穆鲁伊少女”</div>
+        <div class="item-note-plain">该护身符是生育和家庭幸福的庇护神。</div>
+        <div class="item-desc">20世纪初。伊尔库茨克省。</div>
+        <div class="item-desc">棉布、丝绸。手工制作。</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="item">
+        <div class="item-title">3. 木盒中的金属护身符</div>
+        <div class="item-desc">20世纪初。伊尔库茨克州（？）。</div>
+        <div class="item-desc">木材、棉布、金属、珠子、玻璃。手工制作。</div>
+    </div>
+
+    <!-- 4 (с пояснением без точки) -->
+    <div class="item">
+        <div class="item-title">4. 护身符 “三位少女”</div>
+        <div class="item-note-plain">生育和家庭幸福庇护神的形象。</div>
+        <div class="item-desc">19世纪末 – 20世纪初。伊尔库茨克州。</div>
+        <div class="item-desc">毡、棉布、金属、珠子。拉丝、刺绣。手工制作。</div>
+    </div>
+
+    <!-- 5 (с пояснением без точки) -->
+    <div class="item">
+        <div class="item-title">5. 人形护身符“汗霍托”</div>
+        <div class="item-note-plain">护身符 “汗霍托” 由六个人像组成 – 五个女性，一个男性。母婴庇护神，赐予夫妻幸福与财富。该护身符悬挂于婚床旁。</div>
+        <div class="item-desc">19世纪 – 20世纪初。伊尔库茨克省。</div>
+        <div class="item-desc">锦缎、棉布、毛皮、羽毛、线。手工缝制。</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="item">
+        <div class="item-title">6. 鱼尾人形护身符 “汗霍托爷爷” – 奥尔洪岛的主人</div>
+        <div class="item-desc">20世纪初，贝加尔湖前岸地区，奥尔洪岛。</div>
+        <div class="item-desc">木材。</div>
+    </div>
+
+    <!-- 7 -->
+    <div class="item">
+        <div class="item-title">7. 萨满石</div>
+        <div class="item-desc">20世纪初，贝加尔湖前岸地区。</div>
+        <div class="item-desc">石、桦树皮。</div>
+    </div>
+
+    <!-- 8 -->
+    <div class="item">
+        <div class="item-title">8. 用黄鼬皮制成的护身符，带马口铁人形小像</div>
+        <div class="item-desc">20世纪初。伊尔库茨克省。</div>
+        <div class="item-desc">黄鼬皮、粗呢、棉布、木材、马口铁。毛皮加工。手工制作。</div>
+    </div>
+
+</div>
+</body>
+</html>

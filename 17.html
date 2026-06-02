@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Декоративная ваза (Китай)</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        /* Бордовый пояснительный блок с полоской сверху */
+        .description {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .description::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item-title">装饰花瓶（中国代表团赠）</div>
+    <div class="item-desc">2014年。中国江苏省，景德镇市</div>
+    <div class="item-desc">瓷器，珐琅，釉</div>
+    <div class="description">
+        细颈瓶象征“不流失”，寓意守护宇宙奥秘、智慧超脱生死。红色在东方自古即为喜庆之色：佳节时乐器系红弦，贺词书于红纸。
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 10–12</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        /* Бордовый блок с полоской сверху, без лишних интервалов */
+        .description {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.4;          /* компактный межстрочный интервал */
+            text-align: justify;
+        }
+        .description::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 10 -->
+    <div class="item">
+        <div class="item-title">10. 上乌丁斯克市议会委员胸章</div>
+        <div class="item-desc">1870年</div>
+        <div class="item-desc">银，金属合金；錾刻，雕刻，铸造</div>
+    </div>
+
+    <!-- 11 -->
+    <div class="item">
+        <div class="item-title">11. 上乌丁斯克城市公共管理机构成员</div>
+        <div class="item-desc">1908年</div>
+    </div>
+
+    <!-- 12 -->
+    <div class="item">
+        <div class="item-title">12. 官员腰带，上刻铭文 (旧俄文正字法)：“上连斯克县选任，奥利宗异族管理局，马拉兹盖•伊梅希诺夫，阿贝扎耶夫第二氏族。1890年”</div>
+        <div class="item-desc">1890年，伊尔库茨克省</div>
+        <div class="item-desc">皮革，铜镍合金；铸造，雕刻</div>
+        <div class="description">
+            前贝加尔地区（伊尔库茨克省）布里亚特人的草原管理机构代表享有佩戴这种官员腰带的荣誉。
+            <br>
+            直至19世纪90年代，管理布里亚特人的最高机关为草原杜马，异族管理局则是草原杜马与氏族管理之间的中间环节。
+            <br>
+            草原杜马的行政人员包括：
+            <br>
+            —— 首长；
+            <br>
+            —— 选任；
+            <br>
+            —— 文书。
+            <br>
+            其职责包括：执行上级机关指令；征收牙萨克（毛皮税）；摊派徭役；征收粮食；发放贷款等。
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

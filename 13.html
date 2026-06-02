@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–12</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Пояснительная строка (без точки, не жирная, на том же уровне, что и .item-desc) */
+        .item-note {
+            margin: 10px 0 0 0;   /* убираем левый отступ, теперь как у .item-desc */
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+        .item-note::before {
+            content: none;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. 壁挂袋 -->
+    <div class="item">
+        <div class="item-title">1. 壁挂袋。旧礼仪派生活中的墙面装饰</div>
+        <div class="item-desc">19世纪，外贝加尔地区</div>
+        <div class="item-desc">天鹅绒，长毛绒，天然丝，丝捻线，纸板，大麻纤维；手工制作，缝合，衬底刺绣</div>
+    </div>
+
+    <!-- 2. 跪拜用手垫 -->
+    <div class="item">
+        <div class="item-title">2. 跪拜用手垫</div>
+        <div class="item-desc">20世纪初</div>
+        <div class="item-desc">棉布，线；缝合，衬底刺绣，手工制作</div>
+    </div>
+
+    <!-- 3. 婚礼毛巾 (пояснение без точки, на уровне строк) -->
+    <div class="item">
+        <div class="item-title">3. 婚礼毛巾</div>
+        <div class="item-note">东斯拉夫传统仪式中的刺绣毛巾，是婚礼上最重要的象征物之一</div>
+        <div class="item-desc">1918年，俄罗斯，伊尔库茨克省，外贝加尔州</div>
+        <div class="item-desc">粗麻布，彩色棉线；计数平绣，钩针编织</div>
+    </div>
+
+    <!-- 4. 《圣克里斯托弗》圣像 -->
+    <div class="item">
+        <div class="item-title">4. 《圣克里斯托弗》圣像</div>
+        <div class="item-desc">19世纪中叶</div>
+        <div class="item-desc">木，坦培拉，颜料，金箔</div>
+    </div>
+
+    <!-- 5. 旧礼仪派念珠 -->
+    <div class="item">
+        <div class="item-title">5. 旧礼仪派念珠</div>
+        <div class="item-desc">粗麻布，皮革，棉布</div>
+    </div>
+
+    <!-- 6. 施洗约翰像的折叠圣像部件 -->
+    <div class="item">
+        <div class="item-title">6. 施洗约翰像的折叠圣像部件</div>
+        <div class="item-desc">19世纪，俄罗斯</div>
+        <div class="item-desc">金属合金，掐丝珐琅，冲压，铸造</div>
+    </div>
+
+    <!-- 7. 圣台十字架 -->
+    <div class="item">
+        <div class="item-title">7. 圣台十字架</div>
+        <div class="item-desc">19世纪末，俄罗斯</div>
+        <div class="item-desc">青铜，珐琅，铸造</div>
+    </div>
+
+    <!-- 8. 《三圣像》 -->
+    <div class="item">
+        <div class="item-title">8. 《三圣像》（格里高利•神学家，瓦西里•大圣，约翰•金口）</div>
+        <div class="item-desc">19世纪，俄罗斯</div>
+        <div class="item-desc">青铜，掐丝珐琅，铸造，冲压</div>
+    </div>
+
+    <!-- 9. 三折叠圣像护身符 -->
+    <div class="item">
+        <div class="item-title">9. 三折叠圣像护身符（含圣尼古拉及诸圣像）</div>
+        <div class="item-desc">铜合金；铸造</div>
+    </div>
+
+    <!-- 10. 外贝加尔旧礼仪派便携圣像台 -->
+    <div class="item">
+        <div class="item-title">10. 外贝加尔旧礼仪派便携圣像台</div>
+        <div class="item-desc">18世纪，俄罗斯</div>
+        <div class="item-desc">青铜，铸造</div>
+    </div>
+
+    <!-- 11. 八调经 (пояснение без точки) -->
+    <div class="item">
+        <div class="item-title">11. 八调经</div>
+        <div class="item-note">旧礼仪派钩谱手稿</div>
+        <div class="item-desc">19世纪末—20世纪初</div>
+        <div class="item-desc">纸，皮革，木；手抄本</div>
+    </div>
+
+    <!-- 12. 提炉 -->
+    <div class="item">
+        <div class="item-title">12. 提炉</div>
+        <div class="item-desc">19世纪—20世纪初</div>
+        <div class="item-desc">铜，粘土，颜料，釉；铸造，冲压，敲花，烧制</div>
+    </div>
+
+</div>
+</body>
+</html>

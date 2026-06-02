@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальные инструменты и событие</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <div class="item">
+        <div class="item-title">1. 马头琴（布里亚特民间弓弦乐器）</div>
+        <div class="item-desc">1992年，乌兰乌德市</div>
+        <div class="item-desc">木，马鬃，颜料</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">2. 昌扎-普里马（布里亚特四弦拨弦乐器）</div>
+        <div class="item-desc">1983年</div>
+        <div class="item-desc">山毛榉木，牛皮，金属合金</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">3. 胡尔-普里马</div>
+        <div class="item-desc">1973年，乌兰乌德市</div>
+        <div class="item-desc">山毛榉木，硬橡胶，漆，金属</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">4. 胡齐尔（布里亚特民间弓弦乐器）</div>
+        <div class="item-desc">1930年代</div>
+        <div class="item-desc">木，竹，蛇皮，象牙，马鬃，颜料，漆</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">5. 扎列卡（俄罗斯民间吹奏乐器）</div>
+        <div class="item-desc">1983年</div>
+        <div class="item-desc">山毛榉木，牛骨</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">6. 布里亚特民族乐器乐团在莫斯科布里亚特艺术与文学旬演上</div>
+        <div class="item-desc">1940年10月</div>
+        <!-- нет второй строки, так как материалы не указаны -->
+    </div>
+
+</div>
+</body>
+</html>

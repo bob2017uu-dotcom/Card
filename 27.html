@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаманские предметы</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item">
+        <div class="item-title">萨满服及法器: 手杖、神鞭、神鼓及鼓槌</div>
+        <div class="item-desc">19世纪至20世纪初。伊尔库茨克州</div>
+        <div class="item-desc">皮革、铁、木材、牦牛尾</div>
+    </div>
+    <div class="item">
+        <div class="item-title">萨满法器桌及供奉用礼器: 供碗、礼勺、火镰、铜铃</div>
+        <div class="item-desc">19世纪至20世纪初</div>
+        <!-- без материалов -->
+    </div>
+    <div class="item">
+        <div class="item-title">地方守护神木雕神像</div>
+        <div class="item-desc">19世纪末。外贝加尔地区</div>
+        <div class="item-desc">木材</div>
+    </div>
+</div>
+</body>
+</html>

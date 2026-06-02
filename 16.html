@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–3 (дары)</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Строка с точкой (даты, материалы) */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Строка без точки и без отступа (информация о даре) */
+        .item-gift {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            margin-left: 0;
+        }
+        .item-gift::before {
+            content: none;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Скакун -->
+    <div class="item">
+        <div class="item-title">1. 小雕像《宝马——繁荣的象征》</div>
+        <div class="item-gift">中华人民共和国内蒙古自治区代表团赠予布里亚特共和国政府</div>
+        <div class="item-desc">2006–2008年</div>
+        <div class="item-desc">金属合金，红玉髓，绿松石，珐琅，木，漆</div>
+    </div>
+
+    <!-- 2. Слон со слонёнком (дар + пояснение одной строкой, без точки) -->
+    <div class="item">
+        <div class="item-title">2. 小雕像《象》（内有一幼象）</div>
+        <div class="item-gift">斯里兰卡民主社会主义共和国代表团赠予布里亚特共和国政府。在印度，大象与幼象（相伴或于腹中）的造像被视为幸福婚姻与多子多孙的象征</div>
+        <div class="item-desc">2014年</div>
+        <div class="item-desc">木；镂空雕刻</div>
+    </div>
+
+    <!-- 3. Ваза -->
+    <div class="item">
+        <div class="item-title">3. 装饰花瓶（螺钿技法）</div>
+        <div class="item-gift">朝鲜民主主义人民共和国代表团赠予布里亚特共和国政府</div>
+        <div class="item-desc">2010年</div>
+        <div class="item-desc">石膏，海贝</div>
+    </div>
+
+</div>
+</body>
+</html>
