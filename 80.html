@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фуражка машиниста паровоза</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 700px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-burgundy {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #800000;
+        }
+        .item-burgundy::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item-title">蒸汽机车司机大檐帽</div>
+    <div class="item-plain">曾属于莫克索耶夫•阿列克谢</div>
+    <div class="item-desc">1940年代。苏联</div>   <!-- поменяли порядок и точку -->
+    <div class="item-desc">毛呢、人造革、金属配件</div>
+    <div class="item-burgundy">莫克索耶夫•阿列克谢•谢苗诺维奇 — 布里亚特人中的第一位蒸汽机车司机，乌兰乌德市车站机务段司机。</div>
+</div>
+</body>
+</html>

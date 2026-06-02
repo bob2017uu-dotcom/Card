@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–2: кресло, стол, инструменты</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Строка без точки и отступа */
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* Строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Бордовый пояснительный текст без точки и отступа */
+        .item-burgundy {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #800000;
+        }
+        .item-burgundy::before {
+            content: none;
+        }
+        .item-desc + .item-desc,
+        .item-plain + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Кресло и карточный стол -->
+    <div class="item">
+        <div class="item-title">1. 扶手椅与牌桌</div>
+        <div class="item-plain">由十二月党人兄弟尼古拉•别斯图热夫（1791–1855）和米哈伊尔•别斯图热夫（1800–1871）在西伯利亚流放期间制作。</div>
+        <div class="item-desc">1840年代</div>
+        <div class="item-desc">木材、呢绒；漆</div>
+        <div class="item-burgundy">1839年9月1日起，别斯图热夫兄弟被流放到伊尔库茨克省色楞金斯克城（今布里亚特共和国新色楞金斯克镇）定居。</div>
+        <div class="item-burgundy">牌桌为方形或长方形，专用于打牌。其名称源于同名西班牙纸牌游戏“Lombre”。</div>
+    </div>
+
+    <!-- 2. Тачка и лопата -->
+    <div class="item">
+        <div class="item-title">2. 淘金手推车与平头铁锹</div>
+        <div class="item-plain">西伯利亚大铁路建设工人的主要工具。</div>
+        <div class="item-desc">木材、铁</div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компас, топор, чемодан</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        /* Пояснительный текст бордовым, без точки и отступа */
+        .item-note-burgundy {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #800000;
+        }
+        .item-note-burgundy::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Компас -->
+    <div class="item">
+        <div class="item-title">1. 航海袖珍罗盘</div>
+        <div class="item-desc">20世纪初。德国</div>
+        <div class="item-desc">金属、玻璃；工厂生产</div>
+        <div class="item-note-burgundy">德国 Cassens & Plath 公司（1902年创立）生产的航海球形磁罗盘，该公司为国际航行海船及沿海、内河船舶生产各类航向指示器。坚固可靠的外壳结构可有效防止罗盘受冲击和振动影响。其精度、温度及动态特性均符合所有国际标准。据悉，在修建西伯利亚大铁路期间，曾采购此类罗盘用于「贝加尔」号破冰渡轮。</div>
+    </div>
+
+    <!-- 2. Топор -->
+    <div class="item">
+        <div class="item-title">2. 来自志愿消防协会的消防斧</div>
+        <div class="item-desc">20世纪初。上乌丁斯克</div>
+        <div class="item-desc">金属、木材；工厂生产</div>
+    </div>
+
+    <!-- 3. Дорожный сундук -->
+    <div class="item">
+        <div class="item-title">3. 「手摇风琴」—— 机车乘务组成员食品旅行箱</div>
+        <div class="item-desc">20世纪上半叶。苏联</div>
+        <div class="item-desc">金属、油漆；工厂生产</div>
+    </div>
+
+</div>
+</body>
+</html>

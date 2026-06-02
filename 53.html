@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сценические костюмы</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Строка без точки и без отступа */
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* Строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-plain + .item-desc,
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 舞台服装</div>
+        <div class="item-plain">曾属于：沙纽什金娜•奇米塔•格里戈里耶夫娜（1927–2005），苏联布里亚特歌剧及流行歌手（女高音），俄罗斯苏维埃联邦社会主义共和国人民演员（1978年）。</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+        <div class="item-title">2. 舞台服装</div>
+        <div class="item-plain">曾属于：齐连扎波夫•弗拉基米尔•亚历山德罗维奇（1943–2006），魔术师，布里亚特苏维埃社会主义自治共和国人民演员（1985年），俄罗斯联邦功勋演员（1993年）。</div>
+        <div class="item-desc">1985年，列宁格勒，俄罗斯苏维埃联邦社会主义共和国</div>
+        <div class="item-desc">罗缎、丝绸、锦缎、水钻、亮片、金属配件、珠子、缎子、金线；机缝、手缝。</div>
+    </div>
+
+</div>
+</body>
+</html>

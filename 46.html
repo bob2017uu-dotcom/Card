@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Буддийские предметы и печатные формы</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Морская раковина (дхармашанка) -->
+    <div class="item">
+        <div class="item-title">1. 法螺</div>
+        <div class="item-desc">19世纪，中国</div>
+        <div class="item-desc">海螺；雕刻</div>
+    </div>
+
+    <!-- 2. Тибетская книга (бурятское издание) -->
+    <div class="item">
+        <div class="item-title">2. 藏文书籍（布里亚特刊本）</div>
+        <div class="item-desc">19世纪末—20世纪初</div>
+        <div class="item-desc">纸，木版印刷</div>
+    </div>
+
+    <!-- 3. Различные печатные формы (объединены) -->
+    <div class="item">
+        <div class="item-title">3. 印版（木版、金属活字等）</div>
+        <div class="item-desc">20世纪初，布里亚特</div>
+        <div class="item-desc">木版印版（坯版）、藏文教材单页印版、梵藏文印版、古蒙古文印版 — 木，墨；雕刻；金属活字印版 — 木，金属，墨；雕刻，压印</div>
+    </div>
+
+    <!-- 4. Зелёная Тара -->
+    <div class="item">
+        <div class="item-title">4. 绿度母——慈悲与怜悯之女神，救“八难”者，愈疾者</div>
+        <div class="item-desc">20世纪初，布里亚特</div>
+        <div class="item-desc">打底画布，矿物颜料</div>
+    </div>
+
+    <!-- 5. Четырёхрукий Авалокитешвара -->
+    <div class="item">
+        <div class="item-title">5. 四臂观音——大悲菩萨</div>
+        <div class="item-desc">19世纪。多伦诺尔，内蒙古</div>
+        <div class="item-desc">铜合金，颜料；錾刻，部分铸造，镀银，镀金</div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–13</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Обычная строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Строка без точки и без отступа (для №5) */
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: normal;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* Бордовый блок с чертой сверху и выравниванием (для №3 и №10) */
+        .item-burgundy-block {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .item-burgundy-block::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 《乌丁斯克堡垒》</div>
+        <div class="item-desc">纸，水彩</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+        <div class="item-title">2. 放血工具套件</div>
+        <div class="item-desc">铁，木；锻造</div>
+    </div>
+
+    <!-- 3 (с бордовым пояснением) -->
+    <div class="item">
+        <div class="item-title">3. 兽医包饰牌</div>
+        <div class="item-desc">8世纪中叶，俄罗斯，梅津</div>
+        <div class="item-desc">黄铜；铸造</div>
+        <div class="item-burgundy-block">
+            兽医 — 俄罗斯传统村庄中治疗家畜的医生。治疗或阉割动物（尤其是马匹）时，常需将其放倒，故得名“konoval”（源自“valit’” — 摔倒）。兽医必带工具包，包上挂有金属饰牌，作为职业标识。
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="item">
+        <div class="item-title">4. 马笼头铃铛</div>
+        <div class="item-desc">金属合金</div>
+    </div>
+
+    <!-- 5 (вторая строка без точки) -->
+    <div class="item">
+        <div class="item-title">5. 上乌丁斯克镇哥萨克首领权杖部件</div>
+        <div class="item-plain">器物上部刻有铭文：“外贝加尔军团上乌丁斯克镇 镇首领”</div>
+        <div class="item-desc">19世纪下半叶，上乌丁斯克市</div>
+        <div class="item-desc">金属合金；锻造，雕刻</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="item">
+        <div class="item-title">6. 战斧</div>
+        <div class="item-desc">8世纪，外贝加尔地区</div>
+        <div class="item-desc">铁；锻造</div>
+    </div>
+
+    <!-- 7 -->
+    <div class="item">
+        <div class="item-title">7. 哥萨克皮鞭</div>
+        <div class="item-desc">皮革；编织</div>
+    </div>
+
+    <!-- 8 -->
+    <div class="item">
+        <div class="item-title">8. 首饰盒</div>
+        <div class="item-desc">18世纪，俄罗斯，阿尔汉格尔斯克省，霍尔莫戈雷</div>
+        <div class="item-desc">骨，鸟骨，木，珐琅，金属</div>
+    </div>
+
+    <!-- 9 -->
+    <div class="item">
+        <div class="item-title">9. 枕匣。旅行保险箱</div>
+        <div class="item-desc">18–19世纪初</div>
+        <div class="item-desc">木，金属</div>
+    </div>
+
+    <!-- 10 (с бордовым пояснением) -->
+    <div class="item">
+        <div class="item-title">10. 什托夫酒杯</div>
+        <div class="item-desc">18世纪中叶，俄罗斯</div>
+        <div class="item-desc">玻璃，珐琅；吹制，彩绘</div>
+        <div class="item-burgundy-block">
+            什托夫也是俄罗斯帝国采用公制前的液体容积单位，主要用于测量酒类。1什托夫 ≈ 1.2299升。
+        </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="item">
+        <div class="item-title">11. 酒杯</div>
+        <div class="item-desc">铜</div>
+    </div>
+
+    <!-- 12 -->
+    <div class="item">
+        <div class="item-title">12. 旅行酒壶</div>
+        <div class="item-desc">木，金属</div>
+    </div>
+
+    <!-- 13 -->
+    <div class="item">
+        <div class="item-title">13. 1723年版1卢布硬币（正面为彼得一世胸像）</div>
+        <div class="item-desc">银；铸造</div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личные вещи Афанасия Котова</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: normal;
+            text-align: center;
+            margin: 10px 0 20px 0;
+        }
+        .bio-burgundy {
+            margin: 10px 0 30px 0;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+            color: #800000;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="section-title">阿法纳西•科托夫的私人物品</div>
+    <div class="bio-burgundy">科托夫•阿法纳西（1877 — ?），特洛伊茨科萨夫斯克市（今恰克图）人。为上乌丁斯克市（今乌兰乌德）及外贝加尔铁路的发展做出重要贡献，从事广泛的社会政治活动。受过技术教育。</div>
+
+    <div class="item">
+        <div class="item-title">1. 折尺</div>
+        <div class="item-desc">19世纪。英国，伦敦</div>
+        <div class="item-desc">木材、金属；工厂制造</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">2. 带温度补偿的金属盒气压计（附便携盒）</div>
+        <div class="item-desc">1917年。俄罗斯帝国，波兰王国，华沙</div>
+        <div class="item-desc">钢、木材、皮革</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">3. 雕塑《民兵》 — 战俘制作，来自科托夫收藏</div>
+        <div class="item-desc">木材；雕刻</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">4. 煤油信号灯</div>
+        <div class="item-desc">20世纪下半叶。苏联</div>
+        <div class="item-desc">金属、玻璃；工厂制造</div>
+    </div>
+</div>
+</body>
+</html>

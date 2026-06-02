@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–7 (военные реликвии)</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-plain + .item-desc,
+        .item-desc + .item-desc,
+        .item-plain + .item-plain {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 照片 — 第321步兵师参战人员合影</div>
+        <!-- нет дополнительных строк -->
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+        <div class="item-title">2. ТТ手枪 1933年型</div>
+        <div class="item-desc">1942年，图拉兵工厂</div>
+        <div class="item-desc">金属、塑料</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="item">
+        <div class="item-title">3. 勃朗宁式手枪</div>
+        <div class="item-desc">20世纪初，比利时</div>
+        <div class="item-desc">金属、塑料</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="item">
+        <div class="item-title">4. 个人物品 — 同村战友（布里亚特籍战士）遗物</div>
+        <div class="item-plain">地表采集物品。2005年由“记忆”搜寻队在莫斯科州波多利斯克市附近1941年10月第93东西伯利亚步兵师作战区域发现。</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="item">
+        <div class="item-title">5. 军用水壶 — 曾属于胜利日阅兵参与者巴伊博罗金•安德烈（1918–2000）</div>
+        <div class="item-plain">服役于远东滨海集团军第33步兵团任班长，后调往西南方面军第755步兵团。获颁红星勋章两枚、二级卫国战争勋章，以及“勇敢”奖章、“攻克布拉格”奖章、“攻克柏林”奖章、“战胜德国”奖章。</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="item">
+        <div class="item-title">6. 水壶 — 德军战利品</div>
+        <!-- нет дополнительных строк -->
+    </div>
+
+    <!-- 7 -->
+    <div class="item">
+        <div class="item-title">7. 信函 — 伟大卫国战争参与者写给家人的信（布里亚特语）</div>
+        <!-- нет дополнительных строк -->
+    </div>
+
+</div>
+</body>
+</html>

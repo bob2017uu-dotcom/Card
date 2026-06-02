@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 17–19</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Подзаголовок как название экспоната (без номера) */
+        .sub-item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 16px 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Строка без точки и отступа */
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* Бордовый блок с чертой сверху */
+        .item-burgundy {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+        .item-burgundy p {
+            margin: 0 0 6px 0;
+        }
+        .item-burgundy::before {
+            content: none;
+        }
+        .item-desc + .item-desc,
+        .item-plain + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 17. Ринчино Элбек-Доржи -->
+    <div class="item">
+        <div class="item-title">17. 林钦诺•埃勒别克–道尔吉 (1888–1937)</div>
+        <div class="item-burgundy">
+            <p>杰出的布里亚特社会政治、国家和军事活动家，布里亚特人民革命运动和民族运动领袖之一，国际革命共产主义运动的积极参与者。</p>
+            <p>1921–1925年 – 蒙古人民共和国革命军事委员会主席、政府顾问、蒙古人民党中央委员会主席团成员、蒙古大呼拉尔和小呼拉尔成员。</p>
+            <p>他是翻译家、现代布里亚特文字的创立者之一、政治经济学教授，撰写了许多关于布里亚特和蒙古国际与国内形势的著作。</p>
+        </div>
+    </div>
+
+    <!-- 18. Личные вещи Ринчино -->
+    <div class="item">
+        <div class="item-title">18. 林钦诺•埃勒别克–道尔吉的私人物品</div>
+        <div class="item-plain">卡累利阿白桦木小盒、裁纸刀、碗、打火机</div>
+    </div>
+
+    <!-- 19. Балагин Базар -->
+    <div class="item">
+        <div class="item-title">19. 巴拉金•巴扎尔 (1878–1937)</div>
+        <div class="item-burgundy">
+            <p>诗人、散文家、剧作家，布里亚特文学的奠基人之一，教育家，多部历史、语言学、方法论著作的作者，东方学学者，教授。曾任远东共和国布里亚特-蒙古自治州教育局局长（1921），布里亚特-蒙古自治共和国首任教育人民委员（1923），蒙古学术委员会首任主席（1925）。</p>
+            <p>他是1917年4月23–25日在赤塔举行的外贝加尔州和伊尔库茨克省首届全布里亚特民族大会的主席。</p>
+        </div>
+        <!-- Подзаголовок без номера -->
+        <div class="sub-item-title">《俄蒙术语词典》</div>
+        <div class="item-desc">1928年。上乌丁斯克</div>
+        <div class="item-desc">纸、纸板；活版印刷</div>
+    </div>
+
+</div>
+</body>
+</html>

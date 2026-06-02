@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 6–8</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Подзаголовок для книг (без номера, но с чертой) */
+        .sub-item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 16px 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 6. Книги -->
+    <div class="item">
+        <div class="item-title">6. 十二月党人阅读圈书籍：</div>
+
+        <div class="sub-item-title">《荷马史诗•奥德赛》 — 达西耶夫人 (Madam Dacier. «L’Odyssée d’Homère»)</div>
+        <div class="item-desc">1817年。巴黎</div>
+        <div class="item-desc">纸、纸板、皮革；铅印</div>
+
+        <div class="sub-item-title">《莫里哀作品集》 (Œuvres de Molière)</div>
+        <div class="item-desc">1749年。巴黎</div>
+        <div class="item-desc">纸、纸板、皮革；铅印</div>
+
+        <div class="sub-item-title">《波斯人信札》 — 孟德斯鸠著 (Montesquieu. Lettres persanes.)</div>
+        <div class="item-desc">1815年。巴黎</div>
+        <div class="item-desc">纸、纸板、皮革、印花布；铅印</div>
+    </div>
+
+    <!-- 7. Модель повозки "Сидейка" -->
+    <div class="item">
+        <div class="item-title">7. 模型 — “西杰卡”（一种轻便的双轮马车）</div>
+        <div class="item-desc">1979年。布里亚特苏维埃社会主义自治共和国，色楞格区</div>
+        <div class="item-desc">白桦木、桦木树瘤、桦树根、金属；手工制作</div>
+    </div>
+
+    <!-- 8. Модель памятника Торсону и Бестужеву -->
+    <div class="item">
+        <div class="item-title">8. 十二月党人托尔松与别斯图热夫墓前纪念碑模型</div>
+        <div class="item-desc">1860年代。俄罗斯，外贝加尔地区</div>
+        <!-- материалов нет, только дата -->
+    </div>
+
+</div>
+</body>
+</html>

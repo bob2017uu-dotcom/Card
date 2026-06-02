@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахтёрская лампа, чернильница, подстаканник</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        /* Бордовый блок без дополнительной черты (только текст) */
+        .burgundy-text {
+            margin-top: 10px;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+        .burgundy-text p {
+            margin: 0 0 6px 0;
+        }
+        .burgundy-text::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Метировая лампа -->
+    <div class="item">
+        <div class="item-title">1. 矿用瓦斯灯（？）</div>
+        <div class="item-desc">20世纪下半叶。苏联</div>
+        <div class="item-desc">金属、玻璃；工厂生产</div>
+    </div>
+
+    <!-- 2. Чернильница: сначала строки с точками, потом бордовый пояснительный текст -->
+    <div class="item">
+        <div class="item-title">2. 金属壳墨水瓶</div>
+        <div class="item-desc">20世纪初。俄罗斯</div>
+        <div class="item-desc">玻璃、金属</div>
+        <div class="burgundy-text">
+            内盖图案：海锚与海豚相缠。锚与海豚的组合象征罗马首位皇帝奥古斯都的格言 「Festina lente」（拉丁语：“急缓结合”）。锚代表静止，海豚代表飞速运动。在当代俄罗斯，锚与海豚成为北方舰队支队的徽章。
+        </div>
+    </div>
+
+    <!-- 3. Подстаканник: только заголовок, черта под ним и бордовый текст (без дополнительной черты) -->
+    <div class="item">
+        <div class="item-title">3. 杯托（铁路茶杯托）</div>
+        <div class="burgundy-text">
+            <p>俄罗斯杯托的出现与铁路旅行密不可分，其历史与政治家 谢尔盖•维特（1849–1915）相关。1889年他任帝国财政部铁路事务司司长，后任交通大臣，推行多项铁路改革以改善乘客服务，其中包括在所有列车中配备杯托。</p>
+            <p>杯托自1892年起在弗拉基米尔省生产，获沙皇亚历山大三世批准（沙皇本人偏好铁路出行）。早期杯托仅供权贵使用，以贵金属制成并镶嵌宝石。后来改用铜镍合金生产，普及民间。</p>
+            <p>在苏联新经济政策时期杯托最为盛行：它们与苏联的创新产品——平底玻璃杯完美搭配，当时餐具生产从瓷器/陶器转向玻璃。</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вооружение кочевников</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc + .item-desc,
+        .item-plain + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <div class="item">
+        <div class="item-title">1. 弓囊</div>
+        <div class="item-desc">19世纪。外贝加尔地区</div>
+        <div class="item-desc">皮革、铁、白铜、珊瑚；锻造，錾刻。</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">2. 战弓</div>
+        <div class="item-desc">19世纪。外贝加尔地区</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">3. 头盔</div>
+        <div class="item-plain">贝加尔湖地区中世纪晚期游牧民族的</div>
+        <div class="item-desc">17–18世纪</div>
+        <div class="item-desc">铁；锻造</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">4. 箭囊</div>
+        <div class="item-desc">19世纪。外贝加尔地区</div>
+        <div class="item-desc">木、皮革、金属合金；锻造，錾刻</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">5. 箭</div>
+        <div class="item-desc">19世纪。外贝加尔地区</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">6. 箭囊</div>
+        <div class="item-desc">18–19世纪。前贝加尔地区</div>
+        <div class="item-desc">木、皮革、铁、白铜、粗布、羊毛；锻造，錾刻</div>
+    </div>
+
+</div>
+</body>
+</html>

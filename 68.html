@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пистолеты Mauser и Nagant</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <div class="item">
+        <div class="item-title">1. 毛瑟K-96手枪，1920年型（“波罗毛瑟”）</div>
+        <div class="item-desc">1896年。德国</div>
+        <div class="item-desc">钢、木材</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">2. 纳甘转轮手枪（教学训练用）</div>
+        <div class="item-desc">20世纪。苏联，图拉，图拉兵工厂</div>
+        <div class="item-desc">铁</div>
+    </div>
+
+</div>
+</body>
+</html>

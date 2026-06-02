@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Письменный стол Ербанова</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        /* Бордовый блок с чертой сверху */
+        .description-burgundy {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+        .description-burgundy p {
+            margin: 0 0 6px 0;
+        }
+        .description-burgundy::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item-title">叶尔巴诺夫办公室雕花桌</div>
+    <div class="item-desc">20世纪初</div>
+    <div class="item-desc">木材，漆；立体雕刻</div>
+
+    <div class="description-burgundy">
+        <p>米赫伊•叶尔巴诺夫 (1889–1938) 苏联及布里亚特-蒙古苏维埃社会主义自治共和国（БМАССР）国家与政治活动家，1917–1937年布里亚特民族运动中革命民主派领袖之一。1917年加入俄国社会民主工党（布）。1923–1937年任布里亚特-蒙古自治共和国领导人。</p>
+        <p>在其领导下，共和国实现了稳固政权的建立、法律的切实执行，组织起农业与工业生产，提升了教育与文化水平，创造了新产业与就业岗位。大型工业项目建设：火车车辆修理厂、飞机制造厂、玻璃厂、肉类联合加工厂等。建成输电线路，建立起本地工人阶级干部及民族文化干部的培养体系。扫除文盲，消除社会疾病……文化、艺术机构、剧院、工作室、儿童兴趣小组、美术工坊陆续启动工作。</p>
+        <p>1936–1937年，叶尔巴诺夫主持下制定并通过了《布里亚特-蒙古自治共和国宪法》。该宪法明确了布里亚特-蒙古自治共和国的权利与权限。1937年因被诬告领导“泛蒙古、叛乱破坏及颠覆活动组织”而遭镇压。1956年平反昭雪。</p>
+    </div>
+</div>
+</body>
+</html>

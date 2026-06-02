@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 1–5</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-burgundy {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #800000;
+        }
+        .item-burgundy p {
+            margin: 0 0 6px 0;
+        }
+        .item-burgundy::before {
+            content: none;
+        }
+        .item-desc + .item-desc,
+        .item-plain + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 佩剑</div>
+        <div class="item-desc">19世纪末。俄罗斯</div>
+        <div class="item-desc">铜、钢</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+        <div class="item-title">2. 撞击燧发手枪</div>
+        <div class="item-desc">1822年。俄罗斯图拉市</div>
+        <div class="item-desc">钢、铜、木</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="item">
+        <div class="item-title">3. 【斯特凡•雅沃尔斯基】《信仰之石》</div>
+        <div class="item-desc">1730年。基辅：佩切尔斯克修道院印刷厂</div>
+        <div class="item-desc">纸、纸板、皮革、木材；铅印</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="item">
+        <div class="item-title">4. 十二月党人在赤塔城堡门前（1827–1830年）• 十二月党人在磨坊</div>
+        <div class="item-plain">根据列宾原作绘制</div>
+        <div class="item-desc">1975年。俄罗斯苏维埃联邦社会主义共和国，列宁格勒市</div>
+        <div class="item-desc">纸、水彩</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="item">
+        <div class="item-title">5. 小匣</div>
+        <div class="item-plain">可能曾属于十二月党人别斯图热夫之子。</div>
+        <div class="item-desc">19世纪中叶。俄罗斯</div>
+        <div class="item-desc">卡累利阿桦木薄皮、木材；镶嵌细工</div>
+        <div class="item-burgundy">
+            <p>2000年购自新色楞金斯克镇居民。该匣由十二月党人别斯图热夫制作，他擅长以镶嵌细工技术制作此类物品。匣子的最后一位主人可能是十二月党人之子阿列克谢•斯塔尔采夫。</p>
+            <p>匣盖上的题字 “О. Сахалин”（萨哈林岛）表明斯塔尔采夫曾到过该岛。此后，他在日本海彼得大帝湾租用普佳京岛并开展经营活动。</p>
+            <p>以伪哥特体书写的缩写可能读作 “А.Н.Б”（阿列克谢•尼古拉耶维奇•别斯图热夫）。</p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

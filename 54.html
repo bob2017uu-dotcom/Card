@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личные вещи и портреты</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Строка без точки и отступа */
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* Строка с точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-plain + .item-desc,
+        .item-desc + .item-desc,
+        .item-plain + .item-plain {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Портрет Цыденжапова Гомбожапа -->
+    <div class="item">
+        <div class="item-title">1. 肖像 齐登扎波夫•贡博扎普（1905–1980）</div>
+        <div class="item-plain">布里亚特苏联演员、戏剧导演、戏剧教育家、剧作家、社会活动家。苏联人民演员（1940年）。斯大林二等奖学金获得者。布里亚特蒙古音乐戏剧剧院创始人之一。</div>
+        <div class="item-desc">蒙古人民共和国，达尔汗市</div>
+        <div class="item-desc">地毯编织。</div>
+    </div>
+
+    <!-- 2. Личные вещи Жалсараева Дамбы -->
+    <div class="item">
+        <div class="item-title">2. 个人物品 扎尔萨拉耶夫•丹巴（1925–2002: 手表、日历台架）</div>
+        <div class="item-plain">布里亚特苏联诗人，布里亚特共和国国歌歌词作者。</div>
+    </div>
+
+    <!-- 3. Личные вещи Андреева Анатолия -->
+    <div class="item">
+        <div class="item-title">3. 个人物品 安德烈耶夫•阿纳托利（1941–2004: 钢笔、烟灰缸、祈祷筒、节拍器）</div>
+        <div class="item-plain">布里亚特苏维埃社会主义自治共和国功勋艺术活动家，俄罗斯苏维埃联邦社会主义共和国功勋艺术活动家，布里亚特共和国国歌作曲者。</div>
+    </div>
+
+    <!-- 4. Сувенирный нож и трубка Раднаева Саяна -->
+    <div class="item">
+        <div class="item-title">4. 纪念品刀和烟斗 拉德纳耶夫•萨扬（1934–2013）</div>
+        <div class="item-plain">布里亚特国家歌剧芭蕾舞剧院歌剧独唱演员（男中音），俄罗斯苏维埃联邦社会主义共和国人民演员（1985年）。</div>
+        <div class="item-desc">1985年。</div>
+    </div>
+
+    <!-- 5. Сценический костюм Линховоина Хасарана -->
+    <div class="item">
+        <div class="item-title">5. 舞台服装 林霍沃因•哈萨兰（1924–1980）</div>
+        <div class="item-plain">歌剧《浮士德》中梅菲斯托费尔角色。</div>
+        <div class="item-plain">布里亚特苏联歌剧歌手（男低音）、演员、戏剧导演、教育家、政论家、社会活动家，苏联人民演员（1959年）。</div>
+    </div>
+
+</div>
+</body>
+</html>

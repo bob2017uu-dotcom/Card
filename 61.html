@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортивные трофеи и инвентарь 1–6</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-plain + .item-desc,
+        .item-desc + .item-desc,
+        .item-plain + .item-plain {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1 -->
+    <div class="item">
+        <div class="item-title">1. 奖杯</div>
+        <div class="item-plain">曾属于奥运会田径冠军瓦列里•鲍尔佐夫</div>
+        <div class="item-desc">1984年，苏联</div>
+        <div class="item-desc">金属合金；工厂制造</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="item">
+        <div class="item-title">2. 奖杯 — 1957年列宁格勒大学生运动会获胜奖杯</div>
+        <div class="item-plain">获奖者：巴拉尼科夫•韦林顿，苏联功勋运动健将，1964年世界杯得主，国际级拳击银牌得主，1964年东京奥运会国际拳击协会国际级裁判，1965年欧洲冠军。</div>
+        <div class="item-desc">1970年代</div>
+        <div class="item-desc">金属、珐琅；工厂制造</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="item">
+        <div class="item-title">3. 体育奖杯 — 授予布达耶夫•鲍里斯“为胜利意志”</div>
+        <div class="item-plain">获奖者：布达耶夫•鲍里斯，苏联功勋运动健将，俄罗斯联邦功勋教练，布里亚特共和国自由式摔跤队主教练</div>
+        <div class="item-desc">1981年，苏联</div>
+        <div class="item-desc">金属；工厂制造</div>
+    </div>
+
+    <!-- 4 (только заголовок) -->
+    <div class="item">
+        <div class="item-title">4. 胸佩绶带 — “苏尔哈尔班-84”冠军</div>
+        <!-- нет дополнительных строк -->
+    </div>
+
+    <!-- 5 -->
+    <div class="item">
+        <div class="item-title">5. 拳击训练手靶 — 萨福罗诺夫•弗拉基米尔，1956年墨尔本奥运会冠军</div>
+        <div class="item-plain">曾属于萨福罗诺夫•弗拉基米尔，1956年墨尔本奥运会冠军</div>
+        <div class="item-desc">20世纪下半叶</div>
+        <div class="item-desc">皮革、聚氨酯泡沫；工厂制造</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="item">
+        <div class="item-title">6. 带有“色楞格”队队员签名的足球</div>
+        <div class="item-desc">20世纪下半叶，苏联</div>
+        <div class="item-desc">皮革；工厂制造</div>
+    </div>
+
+</div>
+</body>
+</html>

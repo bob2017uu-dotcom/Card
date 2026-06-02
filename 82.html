@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подарочные предметы 1–4</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <div class="item">
+        <div class="item-title">1. 酒壶 — “蒸汽机车”</div>
+        <div class="item-plain">俄罗斯铁路股份公司赠</div>
+        <div class="item-desc">2013年。莫斯科州</div>
+        <div class="item-desc">瓷、钴蓝</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">2. 小雕像 — “圣乔治屠龙”</div>
+        <div class="item-plain">莫斯科及全俄都主教科尔尼利（俄罗斯古老正教会领袖）赠予布里亚特共和国总统</div>
+        <div class="item-desc">2008年。莫斯科州</div>
+        <div class="item-desc">瓷、钴蓝、釉</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">3. 带莫斯科名胜图案盘。莫斯科市政府代表团赠</div>
+        <div class="item-desc">2014年。俄罗斯联邦</div>
+        <div class="item-desc">水晶</div>
+    </div>
+
+    <div class="item">
+        <div class="item-title">4. 纪念品 — “千年锅”</div>
+        <div class="item-plain">鞑靼斯坦共和国总统明蒂梅尔•沙伊米耶夫赠</div>
+        <div class="item-desc">2005年</div>
+        <div class="item-desc">金属合金</div>
+    </div>
+
+</div>
+</body>
+</html>

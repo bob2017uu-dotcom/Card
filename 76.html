@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модель Триумфальной арки (Царские ворота)</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Бордовый пояснительный текст без точки и отступа */
+        .item-burgundy {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #800000;
+        }
+        .item-burgundy::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item-title">凯旋门模型</div>
+    <div class="item-desc">木，颜料，雕刻</div>
+    <div class="item-burgundy">1891年6月20–21日，为迎接皇太子尼古拉•亚历山德罗维奇结束环球旅行归来途中莅临上乌丁斯克市，特兴建了一座凯旋门——“沙皇门”。</div>
+    <div class="item-burgundy">门中央为俄罗斯帝国国徽——双头鹰，两侧饰以镂空栏杆。1917年国徽被取下后，凯旋门又屹立了19年（直至1936年）。</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Государственные награды</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: normal;
+            text-align: center;
+            margin: 10px 0 30px 0;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        /* Для наград без номера внутри пункта 8 */
+        .award-subtitle {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 10px 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .last-desc {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="section-title">国家勋章</div>
+
+    <!-- 1–7 -->
+    <div class="item">
+        <div class="item-title">1. 列宁勋章</div>
+        <div class="item-desc">金、铂、银、珐琅、云纹丝带；冲压、上釉。</div>
+    </div>
+    <div class="item">
+        <div class="item-title">2. “金星”奖章</div>
+        <div class="item-desc">模型（仿制品）。</div>
+    </div>
+    <div class="item">
+        <div class="item-title">3. 一级卫国战争勋章</div>
+        <div class="item-desc">金、银、珐琅、金属；冲压、上釉。</div>
+    </div>
+    <div class="item">
+        <div class="item-title">4. 红星勋章</div>
+        <div class="item-desc">银、珐琅、金属；冲压、上釉。</div>
+    </div>
+    <div class="item">
+        <div class="item-title">5. “勇敢”奖章</div>
+        <div class="item-desc">银、珐琅、云纹丝带；冲压、上釉。</div>
+    </div>
+    <div class="item">
+        <div class="item-title">6. “保卫莫斯科”奖章</div>
+        <div class="item-desc">黄铜、云纹丝带；冲压。</div>
+    </div>
+    <div class="item">
+        <div class="item-title">7. “保卫列宁格勒”奖章</div>
+        <div class="item-desc">黄铜、云纹丝带；冲压。</div>
+    </div>
+
+    <!-- 8: первая награда с номером, остальные без номеров -->
+    <div class="item-title">8. “战功”奖章</div>
+    <div class="award-subtitle">红旗勋章</div>
+    <div class="award-subtitle">“保卫苏联北极地区”奖章</div>
+    <div class="award-subtitle">“战胜德国”奖章</div>
+    <div class="award-subtitle">“1941–1945年伟大卫国战争胜利20周年”奖章</div>
+    <div class="award-subtitle">“攻克柏林”奖章</div>
+    <div class="award-subtitle">“解放华沙”奖章</div>
+    <div class="award-subtitle">“苏联陆军海军30周年”奖章</div>
+    <div class="award-subtitle">“苏联武装力量40周年”奖章</div>
+    <div class="award-subtitle">“苏联武装力量50周年”奖章</div>
+    <div class="item-desc last-desc">银、珐琅、黄铜、云纹丝带。</div>
+
+</div>
+</body>
+</html>

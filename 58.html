@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экспонаты 8–14</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        /* Без точки и отступа */
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* С точкой */
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-plain + .item-desc,
+        .item-desc + .item-desc,
+        .item-plain + .item-plain {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 8 -->
+    <div class="item">
+        <div class="item-title">8. 狙击手证书</div>
+        <div class="item-plain">曾属于叶托巴耶夫•阿尔谢尼（1903–1987）</div>
+        <div class="item-plain">共击毙356名德国侵略者。列宁勋章与红星勋章获得者，一级卫国战争勋章（全等级）获得者。</div>
+    </div>
+
+    <!-- 9 -->
+    <div class="item">
+        <div class="item-title">9. 军上衣及纪念章</div>
+        <div class="item-plain">曾属于图拉耶夫•占贝尔（1905–1961）</div>
+        <div class="item-plain">西北方面军第27集团军第188步兵师第580步兵团狙击手，大士。苏联英雄（1943年），预备役中尉（1946年）。</div>
+    </div>
+
+    <!-- 10 -->
+    <div class="item">
+        <div class="item-title">10. 怀表。表底盖刻有文字：“Баглаев С.В. 1943年6月”（Баглаев为姓氏）</div>
+        <div class="item-desc">1930年代，苏联。</div>
+        <div class="item-desc">白铜；工厂制造。</div>
+    </div>
+
+    <!-- 11 -->
+    <div class="item">
+        <div class="item-title">11. 针插与身份识别胶囊</div>
+        <div class="item-plain">曾属于一名红军战士</div>
+        <div class="item-desc">1940年代，苏联。</div>
+        <div class="item-desc">金属、胶木；工厂制造。</div>
+    </div>
+
+    <!-- 12 -->
+    <div class="item">
+        <div class="item-title">12. 金属打火机</div>
+        <div class="item-desc">1940年代，苏联。</div>
+        <div class="item-desc">金属合金；手工制作。</div>
+    </div>
+
+    <!-- 13 -->
+    <div class="item">
+        <div class="item-title">13. 鼻烟盒</div>
+        <div class="item-plain">曾属于一名红军战士</div>
+        <div class="item-desc">1930年代，苏联。</div>
+        <div class="item-desc">黄铜；冲压。</div>
+    </div>
+
+    <!-- 14 -->
+    <div class="item">
+        <div class="item-title">14. 烟盒。带锚图案及刻字：“К.Ф. Васильев 1944年”（Васильев为姓氏）</div>
+        <div class="item-desc">1944年，苏联。</div>
+        <div class="item-desc">铝合金；手工制作。</div>
+    </div>
+
+</div>
+</body>
+</html>

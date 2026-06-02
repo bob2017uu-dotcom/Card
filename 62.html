@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахтёрский и железнодорожный инвентарь</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .sub-item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 16px 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc,
+        .item-plain + .item-desc {
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Резиновый костюм и сапоги -->
+    <div class="item">
+        <div class="item-title">1. 橡胶服 — 隧道掘进工用</div>
+        <div class="item-desc">20世纪，俄罗斯</div>
+        <div class="item-desc">橡胶；工厂制造</div>
+
+        <div class="sub-item-title">长靴 — 矿工工作服</div>
+        <div class="item-desc">1972年，俄罗斯</div>
+        <div class="item-desc">橡胶；工厂制造</div>
+    </div>
+
+    <!-- 2. Два "серебряных" костыля -->
+    <div class="item">
+        <div class="item-title">2. “银质”道钉</div>
+        <!-- строка с датой и местом теперь без точки и отступа -->
+        <div class="item-plain">1978年10月28日钉于贝阿铁路西段与布里亚特段交界处的达万山口</div>
+        <div class="item-desc">1970年代，俄罗斯</div>
+        <div class="item-desc">钢；工厂制造</div>
+
+        <div class="sub-item-title">象征性“银质”道钉 — 用于铁路最后几米接合处的钉入仪式。</div>
+        <div class="item-plain">北贝加尔斯克，1979年10月29日</div>
+        <div class="item-desc">1970年代，苏联</div>
+        <div class="item-desc">钢；工厂制造</div>
+    </div>
+
+    <!-- 3. Шахтёрская лампа -->
+    <div class="item">
+        <div class="item-title">3. 矿用汽油灯</div>
+        <div class="item-desc">20世纪下半叶，俄罗斯</div>
+        <div class="item-desc">金属、玻璃；工厂制造</div>
+    </div>
+
+    <!-- 4. Отбойный молоток -->
+    <div class="item">
+        <div class="item-title">4. 风镐 — 第11号隧道队北穆亚隧道掘进工使用</div>
+        <div class="item-desc">1970年代，俄罗斯</div>
+        <div class="item-desc">金属；工厂制造</div>
+    </div>
+
+</div>
+</body>
+</html>
