@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>匈奴文化遗物 (Xiongnu артефакты)</title>
+    <title>匈奴文化遗物</title>
     <style>
         body {
             background: white;
@@ -27,6 +27,13 @@
             text-align: center;
             margin: 10px 0 30px 0;
         }
+        .subsection {
+            font-size: 22px;
+            font-weight: normal;
+            text-align: center;
+            margin: 30px 0 15px 0;
+            color: black;
+        }
         .item {
             margin-bottom: 28px;
         }
@@ -46,9 +53,6 @@
             content: "• ";
             font-size: 18px;
         }
-        .item-desc + .item-desc {
-            margin-top: 6px;
-        }
         .item-plain {
             margin: 10px 0 0 0;
             font-size: 18px;
@@ -57,12 +61,8 @@
         .item-plain::before {
             content: none;
         }
-        .subsection {
-            margin: 20px 0 10px 0;
-            font-size: 22px;
-            font-weight: normal;
-            color: black;
-            text-align: center;
+        .item-desc + .item-desc {
+            margin-top: 6px;
         }
     </style>
 </head>
@@ -117,14 +117,18 @@
         <div class="item-desc">青铜；铸造，修整。2020年</div>
     </div>
 
+    <!-- 10. исправлен: дата отдельно без точки -->
     <div class="item">
         <div class="item-title">10. 双猫首纹带扣牌饰</div>
-        <div class="item-desc">公元前3世纪 — 公元4世纪。青铜；铸造。2022年</div>
+        <div class="item-plain">公元前3世纪 — 公元4世纪</div>
+        <div class="item-desc">青铜；铸造。2022年</div>
     </div>
 
+    <!-- 11. исправлен: дата отдельно без точки -->
     <div class="item">
         <div class="item-title">11. 「TLV」镜（晚期仿制品）</div>
-        <div class="item-desc">铁器时代 — 中世纪。青铜；铸造。2020年</div>
+        <div class="item-plain">铁器时代 — 中世纪</div>
+        <div class="item-desc">青铜；铸造。2020年</div>
     </div>
 
     <div class="subsection">珠子：</div>
