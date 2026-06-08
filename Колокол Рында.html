@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корабельный колокол (рында)</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-desc {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-desc::before {
+            content: "• ";
+            font-size: 18px;
+        }
+        .item-desc + .item-desc {
+            margin-top: 6px;
+        }
+        .description-burgundy {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .description-burgundy::before {
+            content: none;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="item-title">俄罗斯太平洋舰队「迅猛」号驱逐舰船钟（曾被俄罗斯联邦英雄阿尔达尔·齐登扎波夫所用）</div>
+    <div class="item-desc">符拉迪沃斯托克市。</div>
+    <div class="item-desc">2024年移交。</div>
+    <div class="description-burgundy">
+        船钟是船上的钟。每半小时敲响一次以报时（称为「打铃」）：从半小时开始敲一下，依次递增至八下。此外，船钟还用于通知火警以及在大雾中发出信号。八下钟声（八铃）表示四小时值班的换班（正午除外，正午被视为新船日的开始）。通常，所有现代船只和船舶上都安装船钟。
+    </div>
+</div>
+</body>
+</html>
