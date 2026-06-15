@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музейные этикетки: головные уборы, форма, билет</title>
+    <style>
+        body {
+            background: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            max-width: 800px;
+            background: white;
+            color: black;
+            padding: 20px;
+        }
+        .item {
+            margin-bottom: 28px;
+        }
+        .item-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid black;
+        }
+        .item-plain {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .item-plain::before {
+            content: none;
+        }
+        /* Бордовый блок с чертой сверху и выравниванием */
+        .burgundy-block {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px solid black;
+            color: #800000;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .burgundy-block::before {
+            content: none;
+        }
+        .burgundy-block p {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+
+    <!-- 1. Церемониальный головной убор -->
+    <div class="item">
+        <div class="item-title">1. 仪式头饰</div>
+        <div class="item-plain">曾属于第十二世班智达堪布喇嘛依提格洛夫•达希•多尔佐。</div>
+    </div>
+
+    <!-- 2. Повседневный головной убор -->
+    <div class="item">
+        <div class="item-title">2. 日常头饰</div>
+        <div class="item-plain">曾属于第十一世班智达堪布喇嘛伊罗尔图耶夫•乔伊恩宗•多尔吉。</div>
+    </div>
+
+    <!-- 3. Юнгштурмовка -->
+    <div class="item">
+        <div class="item-title">3. 青年冲锋队服</div>
+        <div class="item-plain">曾属于卡尔西娜，革命和共青团运动的积极分子之一。</div>
+        <div class="burgundy-block">
+            <p>青年冲锋队服是1917年底出现的一种统一准军事青年制服。1918年，18至30岁的男女青年加入革命共产主义青年团（共青团）。他们身着这种制服，代表年轻的世界国际共产主义建设者和旧制度及市侩生活的斗士，列队行进，高唱共产国际歌：“工厂，起来吧！队列，靠拢吧！战斗吧，前进吧，前进吧，前进吧！”</p>
+            <p>在1918年至1930年代期间，青年是内战、抗击白军和干涉军、新经济政策、集体化、垦荒、文化建设和社会主义工业化事件中的主要推动力量。伟大卫国战争前夕，青年人加入“航空化学援助之友协会”、“伏罗希洛夫射手”等组织，进行体能、队列、道德和政治训练。在普及军事训练的特殊课程中，他们掌握了战时急需的专业技能：护士、急救队员、飞行员、狙击手、无线电操作员等。</p>
+        </div>
+    </div>
+
+    <!-- 4. Увольнительный билет -->
+    <div class="item">
+        <div class="item-title">4. 休假证</div>
+        <div class="item-plain">曾属于外贝加尔州居民，第一次世界大战（1914–1918年）参与者。</div>
+    </div>
+
+</div>
+</body>
+</html>
